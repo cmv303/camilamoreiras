@@ -8,12 +8,7 @@ function App() {
     <Router>
       <div className="App">
         <PortfolioContainer />
-
-        {/* <Router>
-        <Routes>
-          <Route path='*' element={} />
-        </Routes>
-      </Router> */}
+        {}
       </div>
     </Router>
   );

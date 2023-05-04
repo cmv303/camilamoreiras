@@ -16,19 +16,27 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <AppBar position="static" color="secondary">
       <ReorderIcon sx={{ cursor: "pointer" }} />
+      <div className="toggleButton">
+        <button>
+          <ReorderIcon />
+        </button>
+      </div>
       <Tabs value={currentPage} onChange={handleChange}>
         <Link to="/">
-          
           <Tab label="Home" value="Home" />
         </Link>
 
         <Link to="/About">
-          
           <Tab label="About" value="About" />
         </Link>
 
-        <Tab label="Projects" value="Projects" />
-        <Tab label="Contact" value="Contact" />
+        <Link to="/Projects">
+          <Tab label="Projects" value="Projects" />
+        </Link>
+
+        <Link to="/Contact">
+          <Tab label="Contact" value="Contact" />
+        </Link>
       </Tabs>
     </AppBar>
   );
