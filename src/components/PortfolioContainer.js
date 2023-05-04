@@ -21,13 +21,14 @@ export default function PortfolioContainer() {
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
+  
   return (
     <section>
       <nav>
-        {}
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-        {}
+        <div className="bodyText">
         {renderPage()}
+        </div>
       </nav>
       <Footer />
     </section>

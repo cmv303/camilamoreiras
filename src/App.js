@@ -1,5 +1,4 @@
-import "./App.css";
-import "./NavTabs.css";
+import "./styles/App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import PortfolioContainer from "./components/PortfolioContainer.js";
 

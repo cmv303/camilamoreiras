@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../NavTabs.css";
+import "../styles/NavTabs.css";
 
 import ReorderIcon from "@mui/icons-material/Reorder.js";
 import AppBar from "@mui/material/AppBar";
@@ -22,7 +22,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   }, [location]);
 
   return (
-    <AppBar className="nav-tabs" position="static" color="secondary">
+    <AppBar className="nav-tabs" position="static" sx={{backgroundColor: "#2A9D8F"}}>
       <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
         <button onClick={() => {setExpandNavTabs((prev) => !prev)}}>
           <ReorderIcon sx={{ cursor: "pointer" }} />
