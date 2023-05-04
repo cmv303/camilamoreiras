@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../NavTabs.css";
 
 import ReorderIcon from "@mui/icons-material/Reorder.js";
@@ -13,14 +13,23 @@ function NavTabs({ currentPage, handlePageChange }) {
     handlePageChange(newValue);
   };
 
+  // !start: doesn't seem to be working
+  const [expandNavTabs, setExpandNavTabs] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setExpandNavTabs(false);
+  }, [location]);
+
   return (
-    <AppBar position="static" color="secondary">
-      <ReorderIcon sx={{ cursor: "pointer" }} />
-      <div className="toggleButton">
-        <button>
-          <ReorderIcon />
+    <AppBar className="nav-tabs" position="static" color="secondary">
+      <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
+        <button onClick={() => {setExpandNavTabs((prev) => !prev)}}>
+          <ReorderIcon sx={{ cursor: "pointer" }} />
         </button>
       </div>
+  {/* //!end: part that is not working */}
+
       <Tabs value={currentPage} onChange={handleChange}>
         <Link to="/">
           <Tab label="Home" value="Home" />

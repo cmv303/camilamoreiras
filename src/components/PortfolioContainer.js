@@ -4,6 +4,7 @@ import Home from "../pages/Home.js";
 import About from "../pages/About.js";
 import Projects from "../pages/Projects.js";
 import Contact from "../pages/Contact.js";
+import Footer from "./Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
@@ -21,11 +22,17 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
   return (
-    <nav>
-      {}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {}
-      {renderPage()}
-    </nav>
+    <section>
+      <nav>
+        {}
+        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        {}
+        {renderPage()}
+      </nav>
+      <Footer />
+    </section>
   );
 }
+
+
+

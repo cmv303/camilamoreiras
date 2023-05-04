@@ -1,7 +1,14 @@
-import React from 'react';
+import React from "react";
+import { LinkedIn } from "@mui/icons-material";
+import { GitHub } from "@mui/icons-material";
 
 export default function Footer() {
-    return (
-        <div>Footer</div>
-    );
+  return (
+    <footer className="footer">
+      <div>
+        <LinkedIn /> <GitHub />
+      </div>
+      <p> &copy; 2023 Camila Moreiras</p>
+    </footer>
+  );
 }
