@@ -1,3 +1,9 @@
+.form-container {
+  max-width: fit-content;
+  padding: 20px;
+  margin: 0 auto;
+  }
+
 .form-row {
     display: flex;
     flex-wrap: wrap;
@@ -16,3 +22,5 @@
     width: 100%;
     padding: 0.375rem 
   }
+
+ 
