@@ -1,5 +1,6 @@
 .form-container {
-  max-width: fit-content;
+  max-width: 45vw;
+  max-height:fit-content;
   padding: 20px;
   margin: 0 auto;
   }
