@@ -7,8 +7,8 @@
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
-    margin-top: 200px;
-    position:initial;
+    margin-top: 20px;
+    position:relative;
     bottom: 0%;
 }
 

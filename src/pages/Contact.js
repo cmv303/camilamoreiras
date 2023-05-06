@@ -31,7 +31,7 @@ export default function Contact() {
       <h1>Contact Form</h1>
   <Card variant="=outlined" className="form-container">
     <CardContent>
-      <Typography gutterBottom variant="h5" component="section">
+      <Typography  variant="h5" component="section">
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
       <TextField
