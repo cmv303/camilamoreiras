@@ -17,7 +17,7 @@ export default function Projects() {
             <CardMedia
               component="img"
               className="project1"
-              image="./Assets/portfolio1.png"
+              image="./Assets/lyrically.png"
               height="194"
               title="Lyrically"
             ></CardMedia>
@@ -41,7 +41,7 @@ export default function Projects() {
             <CardMedia
               component="img"
               className="project2"
-              image="./Assets/logo512.png"
+              image="./Assets/calm_calendar.png"
               height="194"
               title="Calm Calendar"
             ></CardMedia>
@@ -73,7 +73,7 @@ export default function Projects() {
             <CardMedia
               component="img"
               className="project1"
-              image="./Assets/logo192.png"
+              image="./Assets/portfolio1.png"
               height="194"
               title="firstPortfolio"
             ></CardMedia>
