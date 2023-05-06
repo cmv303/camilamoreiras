@@ -22,13 +22,21 @@ function NavTabs({ currentPage, handlePageChange }) {
   }, [location]);
 
   return (
-    <AppBar className="nav-tabs" position="static" sx={{backgroundColor: "#2A9D8F"}}>
+    <AppBar
+      className="nav-tabs"
+      position="static"
+      sx={{ backgroundColor: "#2A9D8F" }}
+    >
       <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
-        <button onClick={() => {setExpandNavTabs((prev) => !prev)}}>
+        <button
+          onClick={() => {
+            setExpandNavTabs((prev) => !prev);
+          }}
+        >
           <ReorderIcon sx={{ cursor: "pointer" }} />
         </button>
       </div>
-  {/* //!end: part that is not working */}
+      {/* //!end: part that is not working */}
 
       <Tabs value={currentPage} onChange={handleChange}>
         <Link to="/">

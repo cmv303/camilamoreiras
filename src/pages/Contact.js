@@ -1,6 +1,14 @@
 import React from "react";
 import { useForm, useFormState } from "react-hook-form";
-import { Snackbar, IconButton, Card, CardContent, Typography, TextField, Button } from "@mui/material";
+import {
+  Snackbar,
+  IconButton,
+  Card,
+  CardContent,
+  Typography,
+  TextField,
+  Button,
+} from "@mui/material";
 import { Close } from "@mui/icons-material";
 import "../styles/Contact.css";
 
@@ -15,12 +23,12 @@ export default function Contact() {
     },
   });
   const { dirtyFields } = useFormState({
-    control
+    control,
   });
   const [open, setOpen] = React.useState(false);
   const onSubmit = (data) => {
-    console.log(data); 
-    setOpen(true)
+    console.log(data);
+    setOpen(true);
   };
   const handleClose = () => {
     setOpen(false);
@@ -29,12 +37,11 @@ export default function Contact() {
   return (
     <div className="section" id="contactPage">
       <h1>Contact Form</h1>
-  <Card variant="=outlined" className="form-container">
-    <CardContent>
-      <Typography  variant="h5" component="section">
-      </Typography>
-      <form onSubmit={handleSubmit(onSubmit)}>
-      <TextField
+      <Card variant="=outlined" className="form-container">
+        <CardContent>
+          <Typography variant="h5" component="section"></Typography>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <TextField
               id="firstName"
               {...register("firstName", { required: true })}
               label="First Name *"
@@ -93,8 +100,8 @@ export default function Contact() {
               Send Message
             </Button>
           </form>
-    </CardContent>
-  </Card>
+        </CardContent>
+      </Card>
 
       <Snackbar
         open={open}
@@ -103,10 +110,10 @@ export default function Contact() {
         message="Message sent"
         action={
           <IconButton
-          size="small"
-          aria-label="close"
-          color="inherit"
-          onClick={handleClose}
+            size="small"
+            aria-label="close"
+            color="inherit"
+            onClick={handleClose}
           >
             <Close fontSize="small" />
           </IconButton>
