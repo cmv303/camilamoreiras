@@ -1,124 +1,139 @@
 import React from "react";
-import { useForm, useFormState } from "react-hook-form";
-import {
-  Snackbar,
-  IconButton,
-  Card,
-  CardContent,
-  Typography,
-  TextField,
-  Button,
-} from "@mui/material";
+import { Snackbar, IconButton, Card, CardContent, Typography, TextField, Button } from "@mui/material";
 import { Close } from "@mui/icons-material";
+import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.css";
 
-export default function Contact() {
-  const { register, handleSubmit, control } = useForm({
-    defaultValues: {
-      firstName: " ",
-      lastName: " ",
-      email: " ",
-      subject: " ",
-      message: " ",
-    },
-  });
-  const { dirtyFields } = useFormState({
-    control,
-  });
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xyyaoave");
+  const [succeeded, setSucceeded] = React.useState(false);
   const [open, setOpen] = React.useState(false);
-  const onSubmit = (data) => {
-    console.log(data);
-    setOpen(true);
-  };
+
   const handleClose = () => {
     setOpen(false);
   };
 
+  const onSubmit = async (data) => {
+    try {
+      const response = await handleSubmit(data);
+      console.log('response:', response);
+      if (response.status === 200 && response.body.ok === true) {
+        console.log("Success", data);
+        setSucceeded(true);
+      } else {
+        console.log("No message sent", response);
+        setSucceeded(false);
+      }
+    } catch (error) {
+      console.log("Error:", error);
+      setSucceeded(false);
+    }
+    setOpen(true);
+  };
+
   return (
-    <div className="section" id="contactPage">
-      <h1>Contact Form</h1>
-      <Card variant="=outlined" className="form-container">
-        <CardContent>
-          <Typography variant="h5" component="section"></Typography>
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <TextField
+    <Card variant="elevation" className="form-container">
+      <CardContent>
+        <form onSubmit={onSubmit}>
+          <TextField
               id="firstName"
-              {...register("firstName", { required: true })}
-              label="First Name *"
+              name="firstName"
+              label="First Name"
               variant="outlined"
               fullWidth
               margin="normal"
-              className={dirtyFields.firstName ? "is-dirty" : ""}
+              required
             />
-            {dirtyFields.firstName}
+            <ValidationError
+              prefix="First Name"
+              field="firstName"
+              errors={state.errors}
+            />
             <TextField
               id="lastName"
-              {...register("lastName", { required: true })}
-              label="Last Name *"
+              name="lastName"
+              label="Last Name"
               variant="outlined"
               fullWidth
               margin="normal"
-              className={dirtyFields.lastName ? "is-dirty" : ""}
+              required
             />
-            {dirtyFields.lastName}
+            <ValidationError
+              prefix="Last Name"
+              field="lastName"
+              errors={state.errors}
+            />
             <TextField
               id="email"
-              {...register("email", {
-                required: true,
-                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-              })}
-              label="Email Address *"
+              type="email"
+              name="email"
+              label="Email Address"
               variant="outlined"
               fullWidth
               margin="normal"
-              className={dirtyFields.email ? "is-dirty" : ""}
+              required
             />
-            {dirtyFields.email}
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
             <TextField
               id="subject"
-              {...register("subject", { required: true })}
-              label="Subject *"
+              name="subject"
+              label="Subject"
               variant="outlined"
               fullWidth
               margin="normal"
-              className={dirtyFields.subject ? "is-dirty" : ""}
+              required
             />
-            {dirtyFields.subject}
             <TextField
               id="message"
-              {...register("message", { required: true })}
-              label="Message *"
+              name="message"
+              label="Message"
               variant="outlined"
               fullWidth
               margin="normal"
               multiline
               rows={5}
-              className={dirtyFields.message ? "is-dirty" : ""}
+              required
             />
-            {dirtyFields.message}
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
             <Button type="submit" variant="contained" color="primary">
               Send Message
             </Button>
-          </form>
-        </CardContent>
-      </Card>
+        </form>
+              <Snackbar
+                open={open}
+                autoHideDuration={3000}
+                onClose={handleClose}
+                message={ succeeded ? "Message sent" : "Failed to send message" }
+                action={
+                  <IconButton
+                    size="small"
+                    aria-label="close"
+                    color="inherit"
+                    onClick={handleClose}
+                  >
+                    <Close fontSize="small" />
+                  </IconButton>
+                }
+              />
+      </CardContent>
+    </Card>
+  );
+}
 
-      <Snackbar
-        open={open}
-        autoHideDuration={3000}
-        onClose={handleClose}
-        message="Message sent"
-        action={
-          <IconButton
-            size="small"
-            aria-label="close"
-            color="inherit"
-            onClick={handleClose}
-          >
-            <Close fontSize="small" />
-          </IconButton>
-        }
-      />
+export default function Contact() {
+  return (
+    <div className="section" id="contactPage">
+      <Typography variant="h5" component="section"></Typography>
+      <h1>Contact Form</h1>
+      <ContactForm />
     </div>
   );
 }
