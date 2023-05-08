@@ -1,5 +1,7 @@
 import React from "react";
 import { Grid, Container, CardMedia } from "@mui/material";
+import lyrically from "../Assets/lyrically.png"
+import portfolio from "../Assets/portfolio1.png"
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 className="project1"
-                image="./Assets/portfolio1.png"
+                image={portfolio}
                 height="194"
                 title="firstPortfolio"
               ></CardMedia>
@@ -37,7 +39,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 className="project1"
-                image="./Assets/lyrically.png"
+                image={lyrically}
                 height="194"
                 title="Lyrically"
               ></CardMedia>

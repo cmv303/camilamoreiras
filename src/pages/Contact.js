@@ -15,9 +15,10 @@ function ContactForm() {
 
   const onSubmit = async (data) => {
     try {
-      const response = await handleSubmit(data);
+      const { response } = await handleSubmit(data);
       console.log('response:', response);
-      if (response.status === 200 && response.body.ok === true) {
+      console.log(response.status, "What response?")
+      if (response.status === 200) {
         console.log("Success", data);
         setSucceeded(true);
       } else {

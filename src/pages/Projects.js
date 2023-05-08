@@ -1,5 +1,9 @@
 import React from "react";
 import { Grid, Container, CardMedia } from "@mui/material";
+import lyrically from "../Assets/lyrically.png"
+import portfolio from "../Assets/portfolio1.png"
+import calmCalendar from "../Assets/calm_calendar.png"
+import employeeTracker from "../Assets/logo192.png"
 
 export default function Projects() {
   return (
@@ -17,7 +21,7 @@ export default function Projects() {
               <CardMedia
                 component="img"
                 className="project1"
-                image="./Assets/lyrically.png"
+                image={lyrically}
                 height="194"
                 title="Lyrically"
               ></CardMedia>
@@ -37,7 +41,7 @@ export default function Projects() {
               <CardMedia
                 component="img"
                 className="project2"
-                image="./Assets/calm_calendar.png"
+                image={calmCalendar}
                 height="194"
                 title="Calm Calendar"
               ></CardMedia>
@@ -51,7 +55,7 @@ export default function Projects() {
             <CardMedia
               component="img"
               className="project3"
-              image="./Assets/favicon.ico"
+              image={employeeTracker}
               height="194"
               title="Employee Tracker"
             ></CardMedia>
@@ -69,7 +73,7 @@ export default function Projects() {
               <CardMedia
                 component="img"
                 className="project1"
-                image="./Assets/portfolio1.png"
+                image={portfolio}
                 height="194"
                 title="firstPortfolio"
               ></CardMedia>
