@@ -8,11 +8,12 @@ import Footer from "./Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
+  console.log("Portfolio3")
   const [currentPage, setCurrentPage] = useState("Home");
   const renderPage = () => {
     return (
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Contact" element={<Contact />} />

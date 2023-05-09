@@ -1,5 +1,5 @@
 {
-  "homepage": "http://cmv303.github.io/React-Portfolio2",
+  "homepage": "http://cmv303.github.io/React-Portfolio2/#",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "prepublish": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

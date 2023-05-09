@@ -4,7 +4,7 @@ import PortfolioContainer from "./components/PortfolioContainer.js";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/React-Portfolio2">
       <div className="App">
         <PortfolioContainer />
         {}
