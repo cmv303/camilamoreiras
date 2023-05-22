@@ -25,7 +25,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     <AppBar
       className="nav-tabs"
       position="static"
-      sx={{ backgroundColor: "#2A9D8F" }}
+      // sx={{ backgroundColor: "#2A9D8F" }}
     >
       <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
         <button
