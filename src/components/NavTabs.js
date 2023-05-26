@@ -22,39 +22,38 @@ function NavTabs({ currentPage, handlePageChange }) {
   }, [location]);
 
   return (
-    <AppBar
-      className="nav-tabs"
-      position="static"
-    >
-      <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
-        <button
-          onClick={() => {
-            setExpandNavTabs((prev) => !prev);
-          }}
-        >
-          <ReorderIcon sx={{ cursor: "pointer" }} />
-        </button>
-      </div>
-      {/* //!end: part that is not working */}
+    <header className="header-container">
+      <AppBar className="nav-tabs" position="static" sx={{background: "#282c34"}}>
+        <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
+          <button
+            onClick={() => {
+              setExpandNavTabs((prev) => !prev);
+            }}
+          >
+            <ReorderIcon sx={{ cursor: "pointer" }} />
+          </button>
+        </div>
+        {/* //!end: part that is not working */}
 
-      <Tabs value={currentPage} onChange={handleChange}>
-        <Link to="/">
-          <Tab label="Home" value="Home" />
-        </Link>
+        <Tabs value={currentPage} onChange={handleChange}>
+          <Link to="/" className="nav-link">
+            <Tab label="Home" value="Home" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
+          </Link>
 
-        <Link to="/About">
-          <Tab label="About" value="About" />
-        </Link>
+          <Link to="/About" className="nav-link">
+            <Tab label="About" value="About" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
+          </Link>
 
-        <Link to="/Projects">
-          <Tab label="Projects" value="Projects" />
-        </Link>
+          <Link to="/Projects" className="nav-link">
+            <Tab label="Projects" value="Projects" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
+          </Link>
 
-        <Link to="/Contact">
-          <Tab label="Contact" value="Contact" />
-        </Link>
-      </Tabs>
-    </AppBar>
+          <Link to="/Contact" className="nav-link">
+            <Tab label="Contact" value="Contact" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
+          </Link>
+        </Tabs>
+      </AppBar>
+    </header>
   );
 }
 

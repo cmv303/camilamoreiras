@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="socialMedia">
-      <a href="https://www.linkedin.com/in/camila-moreiras-phd-14baa526b/" target="_blank">
+      <a href="https://www.linkedin.com/in/camila-moreiras-14baa526b/" target="_blank">
           <LinkedIn />
         </a>
         <a href="https://github.com/cmv303" target="_blank">

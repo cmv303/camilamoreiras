@@ -5,7 +5,6 @@ import About from "../pages/About.js";
 import Projects from "../pages/Projects.js";
 import Contact from "../pages/Contact.js";
 import Footer from "./Footer.js";
-import Header from "./Header.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
@@ -25,18 +24,15 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <header>
-      <Header />
         <section>
           <nav>
             <NavTabs
               currentPage={currentPage}
               handlePageChange={handlePageChange}
             />
-            <div className="bodyText">{renderPage()}</div>
+              <div className="bodyText">{renderPage()}</div>
           </nav>
           <Footer />
         </section>
-    </header>
   );
 }
