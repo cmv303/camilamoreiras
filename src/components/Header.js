@@ -3,8 +3,7 @@ import "../styles/Header.css";
 
 export default function Header() {
   return (
-    <header className="header-container">
-      <div className="header"><Header /></div>
-    </header>
+      <header className="header">
+      </header>
   );
 }
