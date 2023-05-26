@@ -1,6 +1,10 @@
 import React from "react";
-import "../styles/Header.css"
+import "../styles/Header.css";
 
 export default function Header() {
-  return <div className="header">Header</div>;
+  return (
+    <header className="header-container">
+      <div className="header"><Header /></div>
+    </header>
+  );
 }
