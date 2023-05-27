@@ -40,12 +40,12 @@ function NavTabs({ currentPage, handlePageChange }) {
             <Tab label="Home" value="Home" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
           </Link>
 
-          <Link to="/About" className="nav-link">
-            <Tab label="About" value="About" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
-          </Link>
-
           <Link to="/Projects" className="nav-link">
             <Tab label="Projects" value="Projects" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
+          </Link>
+
+          <Link to="/About" className="nav-link">
+            <Tab label="About" value="About" sx={{ "& .MuiTab-wrapper": {color: "white"} }} />
           </Link>
 
           <Link to="/Contact" className="nav-link">
