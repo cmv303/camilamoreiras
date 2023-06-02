@@ -5,7 +5,7 @@ import profileImage from "../Assets/camila_moreiras.jpg";
 export default function About() {
   return (
     <Card className="section" id="aboutPage">
-      <CardContent>
+      <CardContent sx={{ width: "100%", height: "100vh"}}>
         <Typography variant="h4" component="h1" gutterBottom>
           About Page
         </Typography>
