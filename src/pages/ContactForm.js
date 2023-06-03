@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
 
-  //return form-container card
+  //return ContactForm
   return (
     <Card variant="elevation" className="form-container">
       <CardContent>
@@ -106,7 +106,7 @@ export default function ContactForm() {
               field="message"
               errors={state.errors}
             />
-            <Button type="submit" variant="contained" color="primary">
+            <Button type="submit" variant="contained" sx={{ backgroundColor: "#282c34", color: "#f5f5f5" }}>
               Send Message
             </Button>
         </form>

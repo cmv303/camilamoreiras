@@ -8,7 +8,7 @@ import Footer from "./Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
-  console.log("Portfolio3")
+  console.log("Portfolio3");
   const [currentPage, setCurrentPage] = useState("Home");
   const renderPage = () => {
     return (
@@ -24,15 +24,17 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-        <section>
-          <nav>
-            <NavTabs
-              currentPage={currentPage}
-              handlePageChange={handlePageChange}
-            />
-              <div className="bodyText">{renderPage()}</div>
-          </nav>
-          <Footer />
-        </section>
+    <React.Fragment>
+      <main className="bodyContainer">
+        <nav>
+          <NavTabs
+            currentPage={currentPage}
+            handlePageChange={handlePageChange}
+          />
+        </nav>
+        <div className="bodyText">{renderPage()}</div>
+      </main>
+      <Footer />
+    </React.Fragment>
   );
 }

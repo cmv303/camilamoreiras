@@ -1,0 +1,25 @@
+.About {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.about-heading {
+    padding: 20px;
+
+}
+
+.body-text{
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.About .profileImage {
+    height: 194px;
+    width: 194px;
+    border-radius: 40%;
+    margin: 0 auto;
+}
