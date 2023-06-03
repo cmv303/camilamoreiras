@@ -7,11 +7,11 @@ export default function About() {
     <Card className="section" id="aboutPage">
       <CardContent sx={{ width: "100%", height: "100vh"}}>
         <Typography variant="h4" component="h1" gutterBottom>
-          About Page
+          Camila Moreiras
         </Typography>
         <Box sx={{ width: "50%", margin: "0 auto" }}>
           <Typography variant="body1" style={{ marginBottom: 20 }}>
-            Full-stack software engineer with a background in documentary filmmaking and teaching
+            Full-stack software engineer with a background in documentary filmmaking and teaching.
           </Typography>
         </Box>
         <CardMedia

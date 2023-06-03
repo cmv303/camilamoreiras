@@ -15,7 +15,7 @@ import dailyClawsmic from "../Assets/Daily_Clawsmic.png"
 export default function Projects() {
   return (
     <Container className="section" id="projectsPage">
-      <h1>Projects Page</h1>
+      <h1 style={{ marginBottom: "20px",  marginTop: "20px"  }}>Selected Projects</h1>
       <Grid container spacing={4}>
       <Grid item xs={12} sm={6} md={4}>
           <Card sx={{ borderRadius: "8px", height: "100%" }}>

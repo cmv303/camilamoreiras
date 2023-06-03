@@ -133,7 +133,7 @@ export default function Contact() {
   return (
     <div className="section" id="contactPage">
       <Typography variant="h5" component="section"></Typography>
-      <h1>Contact Form</h1>
+      <h1></h1>
       <ContactForm />
     </div>
   );
