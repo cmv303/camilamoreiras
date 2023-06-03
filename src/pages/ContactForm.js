@@ -1,10 +1,10 @@
 import React from "react";
-import { Snackbar, IconButton, Card, CardContent, Typography, TextField, Button } from "@mui/material";
+import { Snackbar, IconButton, Card, CardContent, TextField, Button } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.css";
 
-function ContactForm() {
+export default function ContactForm() {
   const [state, handleSubmit] = useForm("xyyaoave");
   const [succeeded, setSucceeded] = React.useState(false);
   const [open, setOpen] = React.useState(false);
@@ -32,6 +32,8 @@ function ContactForm() {
     setOpen(true);
   };
 
+
+  //return form-container card
   return (
     <Card variant="elevation" className="form-container">
       <CardContent>
@@ -126,15 +128,5 @@ function ContactForm() {
               />
       </CardContent>
     </Card>
-  );
-}
-
-export default function Contact() {
-  return (
-    <div className="section" id="contactPage">
-      <Typography variant="h5" component="section"></Typography>
-      <h1></h1>
-      <ContactForm />
-    </div>
   );
 }

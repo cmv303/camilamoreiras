@@ -3,7 +3,7 @@ import NavTabs from "./NavTabs.js";
 import Home from "../pages/Home.js";
 import About from "../pages/About.js";
 import Projects from "../pages/Projects.js";
-import Contact from "../pages/Contact.js";
+import ContactPage from "../pages/ContactForm.js";
 import Footer from "./Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -16,7 +16,7 @@ export default function PortfolioContainer() {
         <Route exact path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<Contact />} />
+        <Route path="/Contact" element={<ContactPage />} />
       </Routes>
     );
   };

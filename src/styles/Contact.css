@@ -1,6 +1,14 @@
+.contactPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .form-container {
-  max-width: 45vw;
-  max-height: fit-content;
+  max-width: 70vw;
+  max-height: 100vh;
+  display: flex;
   padding: 20px;
-  margin: 0 auto;
+  margin-top: 40px;
 }
