@@ -8,7 +8,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 function NavTabs({ currentPage, handlePageChange }) {
-  console.log("Nav tabs here?");
   const handleChange = (event, newValue) => {
     handlePageChange(newValue);
   };
