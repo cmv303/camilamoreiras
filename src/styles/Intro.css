@@ -1,0 +1,21 @@
+.Intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.tldr {
+    margin-top: -4%
+}
+
+.featured {
+    margin-top: -5%
+}
+
+.body-text-intro{
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+}

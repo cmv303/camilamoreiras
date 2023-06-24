@@ -6,10 +6,14 @@ import {
   CardContent,
   CardMedia,
   Typography,
-  Button
+  Button,
 } from "@mui/material";
+import profileImage from "../Assets/camila_moreiras.jpg";
 import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
+import "../styles/ProfilePic.css";
+import Intro from "./Intro";
+
 
 export default function Home() {
   const featuredItems = [
@@ -25,27 +29,48 @@ export default function Home() {
       description:
         "Command-line application that allows users to view various components...",
       image: employeeTracker,
-      link:
-        "https://drive.google.com/file/d/1r_5NjOQ6hT6QMHWgTK0L4u6RhNuheZws/view",
+      link: "https://drive.google.com/file/d/1r_5NjOQ6hT6QMHWgTK0L4u6RhNuheZws/view",
     },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? featuredItems.length - 1 : prevIndex - 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? featuredItems.length - 1 : prevIndex - 1
+    );
   };
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex === featuredItems.length - 1 ? 0 : prevIndex + 1));
+    setActiveIndex((prevIndex) =>
+      prevIndex === featuredItems.length - 1 ? 0 : prevIndex + 1
+    );
   };
 
   const currentItem = featuredItems[activeIndex];
 
   return (
-    <Container className="section" id="homePage">
-      <h1 style={{ marginBottom: "20px",  marginTop: "20px"  }} >Featured</h1>
-      <div style={{ position: "relative" }}>
+    <Container className="section" id="homePage" sx={{marginTop: "20px"}}>
+
+       {/* profile pic */}
+       <CardMedia
+        className="profileImage"
+        component="img"
+        src={profileImage}
+        alt="Profile Image"
+      />
+      {/* intro component added here */}
+      <section style={{ marginTop: "20px", position: "relative" }}>
+        <Grid container spacing={4} textAlign="center" justifyContent="center">
+          <Intro />
+        </Grid>
+      </section>
+
+      {/* featured projects */}
+      <h3 style={{ marginBottom: "20px" }} className="featured">Featured Projects</h3>
+      <div style={{ position: "relative", marginBottom: "20px" }}>
+
+        {/* carousel */}
         <Grid container spacing={4} textAlign="center" justifyContent="center">
           <Grid item xs={12} sm={6} md={4}>
             <Card sx={{ borderRadius: "8px", height: "100%" }}>
@@ -79,7 +104,9 @@ export default function Home() {
             </Card>
           </Grid>
         </Grid>
-        <div 
+
+        {/* carousel buttons and their styling */}
+        <div
           style={{
             display: "flex",
             justifyContent: "center",
@@ -88,12 +115,31 @@ export default function Home() {
             left: 0,
             right: 0,
             padding: "0 20px",
-            boxSizing: "border-box"
+            boxSizing: "border-box",
           }}
         >
-          <Button variant="contained" onClick={handlePrev} sx={{ backgroundColor: "#282c34", color: "#f5f5f5", marginRight: "25%" }}
->Previous</Button>
-          <Button variant="contained" onClick={handleNext} sx={{ backgroundColor: "#282c34", color: "#f5f5f5", marginLeft: "25%" }}>Next</Button>
+          <Button
+            variant="contained"
+            onClick={handlePrev}
+            sx={{
+              backgroundColor: "#282c34",
+              color: "#f5f5f5",
+              marginRight: "25%",
+            }}
+          >
+            Previous
+          </Button>
+          <Button
+            variant="contained"
+            onClick={handleNext}
+            sx={{
+              backgroundColor: "#282c34",
+              color: "#f5f5f5",
+              marginLeft: "25%",
+            }}
+          >
+            Next
+          </Button>
         </div>
       </div>
     </Container>

@@ -1,0 +1,10 @@
+.profileImage {
+height: 194px;
+width: 194px;
+border-radius: 40%;
+margin: 0 auto;
+}
+
+profileImageId {
+    margin-top: 10px;
+}

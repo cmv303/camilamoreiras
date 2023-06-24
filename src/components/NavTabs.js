@@ -12,7 +12,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     handlePageChange(newValue);
   };
 
-  // !start: doesn't seem to be working
+  // !start: toggle button doesn't seem to be working. I've commented it out for now
   const [expandNavTabs, setExpandNavTabs] = useState(false);
   const location = useLocation();
 
@@ -23,7 +23,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header className="header-container">
       <AppBar className="nav-tabs" position="static" sx={{background: "#282c34"}}>
-        <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
+        {/* <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
           <button
             onClick={() => {
               setExpandNavTabs((prev) => !prev);
@@ -31,7 +31,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           >
             <ReorderIcon sx={{ cursor: "pointer" }} />
           </button>
-        </div>
+        </div> */}
         {/* //!end: part that is not working */}
 
         <Tabs value={currentPage} onChange={handleChange}>

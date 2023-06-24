@@ -8,7 +8,6 @@ import Footer from "./Footer.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function PortfolioContainer() {
-  console.log("Portfolio3");
   const [currentPage, setCurrentPage] = useState("Home");
   const renderPage = () => {
     return (
