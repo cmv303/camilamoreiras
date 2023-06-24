@@ -11,7 +11,6 @@ import {
 import profileImage from "../Assets/camila_moreiras.jpg";
 import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
-import "../styles/ProfilePic.css";
 import Intro from "./Intro";
 
 
@@ -58,6 +57,12 @@ export default function Home() {
         component="img"
         src={profileImage}
         alt="Profile Image"
+        sx={{
+          height: "194px",
+          width: "194px",
+          borderRadius: "40%",
+          margin: "0 auto",
+          }}
       />
       {/* intro component added here */}
       <section style={{ marginTop: "20px", position: "relative" }}>
