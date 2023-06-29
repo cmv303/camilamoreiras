@@ -24,31 +24,27 @@ export default function ContactForm() {
   const onSubmit = async (data) => {
     try {
       const { response } = await handleSubmit(data);
-      console.log("response:", response);
-      console.log(response.status, "What response?");
       if (response.status === 200) {
-        console.log("Success", data);
         setSucceeded(true);
       } else {
-        console.log("No message sent", response);
         setSucceeded(false);
       }
     } catch (error) {
-      console.log("Error:", error);
       setSucceeded(false);
     }
     setOpen(true);
   };
 
-  //return ContactForm
   return (
     <section className="getInTouch">
+      {/* introductory text at top of page */}
       <Typography variant="h1" component="div" sx={{ fontSize: "1rem" }}>
         Feel free to send me an email by using the mail icon in the footer or
         use this contact form. Either way, I'll receive it. I look forward to
         hearing from you!
       </Typography>
       <Card variant="elevation" className="form-container">
+        {/* contact form */}
         <CardContent>
           <form onSubmit={onSubmit}>
             <TextField

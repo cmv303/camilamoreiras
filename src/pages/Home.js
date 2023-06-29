@@ -13,7 +13,6 @@ import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
 import Intro from "./Intro";
 
-
 export default function Home() {
   const featuredItems = [
     {
@@ -49,10 +48,9 @@ export default function Home() {
   const currentItem = featuredItems[activeIndex];
 
   return (
-    <Container className="section" id="homePage" sx={{marginTop: "20px"}}>
-
-       {/* profile pic */}
-       <CardMedia
+    <Container className="section" id="homePage" sx={{ marginTop: "20px" }}>
+      {/* profile pic */}
+      <CardMedia
         className="profileImage"
         component="img"
         src={profileImage}
@@ -62,7 +60,7 @@ export default function Home() {
           width: "194px",
           borderRadius: "40%",
           margin: "0 auto",
-          }}
+        }}
       />
       {/* intro component added here */}
       <section style={{ marginTop: "20px", position: "relative" }}>
@@ -72,9 +70,10 @@ export default function Home() {
       </section>
 
       {/* featured projects */}
-      <h3 style={{ marginBottom: "20px" }} className="featured">Featured Projects</h3>
+      <h3 style={{ marginBottom: "20px" }} className="featured">
+        Featured Projects
+      </h3>
       <div style={{ position: "relative", marginBottom: "20px" }}>
-
         {/* carousel */}
         <Grid container spacing={4} textAlign="center" justifyContent="center">
           <Grid item xs={12} sm={6} md={4}>
