@@ -1,5 +1,13 @@
 import React from "react";
-import { Snackbar, IconButton, Card, CardContent, TextField, Button } from "@mui/material";
+import {
+  Snackbar,
+  IconButton,
+  Card,
+  CardContent,
+  TextField,
+  Button,
+  Typography,
+} from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.css";
@@ -16,8 +24,8 @@ export default function ContactForm() {
   const onSubmit = async (data) => {
     try {
       const { response } = await handleSubmit(data);
-      console.log('response:', response);
-      console.log(response.status, "What response?")
+      console.log("response:", response);
+      console.log(response.status, "What response?");
       if (response.status === 200) {
         console.log("Success", data);
         setSucceeded(true);
@@ -32,13 +40,18 @@ export default function ContactForm() {
     setOpen(true);
   };
 
-
   //return ContactForm
   return (
-    <Card variant="elevation" className="form-container">
-      <CardContent>
-        <form onSubmit={onSubmit}>
-          <TextField
+    <section className="getInTouch">
+      <Typography variant="h1" component="div" sx={{ fontSize: "1rem" }}>
+        Feel free to send me an email by using the mail icon in the footer or
+        use this contact form. Either way, I'll receive it. I look forward to
+        hearing from you!
+      </Typography>
+      <Card variant="elevation" className="form-container">
+        <CardContent>
+          <form onSubmit={onSubmit}>
+            <TextField
               id="firstName"
               name="firstName"
               label="First Name"
@@ -106,27 +119,32 @@ export default function ContactForm() {
               field="message"
               errors={state.errors}
             />
-            <Button type="submit" variant="contained" sx={{ backgroundColor: "#282c34", color: "#f5f5f5" }}>
+            <Button
+              type="submit"
+              variant="contained"
+              sx={{ backgroundColor: "#282c34", color: "#f5f5f5" }}
+            >
               Send Message
             </Button>
-        </form>
-              <Snackbar
-                open={open}
-                autoHideDuration={3000}
-                onClose={handleClose}
-                message={ succeeded ? "Message sent" : "Failed to send message" }
-                action={
-                  <IconButton
-                    size="small"
-                    aria-label="close"
-                    color="inherit"
-                    onClick={handleClose}
-                  >
-                    <Close fontSize="small" />
-                  </IconButton>
-                }
-              />
-      </CardContent>
-    </Card>
+          </form>
+          <Snackbar
+            open={open}
+            autoHideDuration={3000}
+            onClose={handleClose}
+            message={succeeded ? "Message sent" : "Failed to send message"}
+            action={
+              <IconButton
+                size="small"
+                aria-label="close"
+                color="inherit"
+                onClick={handleClose}
+              >
+                <Close fontSize="small" />
+              </IconButton>
+            }
+          />
+        </CardContent>
+      </Card>
+    </section>
   );
 }
