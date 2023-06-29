@@ -5,7 +5,7 @@ import "../styles/Footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" >
       <Grid
         container
         justifyContent="center"
@@ -14,10 +14,10 @@ export default function Footer() {
         className="socialMedia"
       >
         <Grid item xs={12} sm={6} md={4}>
-          <a href="https://www.linkedin.com/in/camilamoreiras/" target="_blank">
+          <a href="https://www.linkedin.com/in/camilamoreiras/" target="_blank" rel="noreferrer">
             <LinkedIn />
           </a>
-          <a href="https://github.com/cmv303" target="_blank">
+          <a href="https://github.com/cmv303" target="_blank" rel="noreferrer">
             <GitHub />
           </a>
           <a href="mailto: moreiras.camila@gmail.com">
