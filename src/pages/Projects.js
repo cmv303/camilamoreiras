@@ -21,7 +21,7 @@ export default function Projects() {
       </h1>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ borderRadius: "8px", height: "100%" }}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
             <CardContent>
               <Typography variant="h5" component="div">
                 The Daily Clawsmic
@@ -52,19 +52,31 @@ export default function Projects() {
                 Contributed primarily to the CSS and readme.
               </Typography>
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://github.com/cmv303/Clawesome-Crew"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Repository
               </Button>
 
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://cosmic-gallary.herokuapp.com/"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Site
               </Button>
@@ -73,7 +85,7 @@ export default function Projects() {
         </Grid>
 
         <Grid item xs={12} sm={6} md={4}>
-          <Card sx={{ borderRadius: "8px", height: "100%" }}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
             <CardContent>
               <Typography variant="h5" component="div">
                 Lyrically
@@ -99,19 +111,31 @@ export default function Projects() {
                 Contributed to the filters, readme, and html
               </Typography>
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://github.com/cmv303/SuperGroupOne"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Repository
               </Button>
 
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://catalystix.github.io/SuperGroupOne/"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Site
               </Button>
@@ -119,8 +143,8 @@ export default function Projects() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3}>
-          <Card sx={{ borderRadius: "8px", height: "100%" }}>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
             <CardContent>
               <Typography variant="h5" component="div">
                 Employee Tracker
@@ -149,19 +173,31 @@ export default function Projects() {
                 Demo video available through link
               </Typography>
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://github.com/cmv303/Employee_Tracker"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Repository
               </Button>
 
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://drive.google.com/file/d/1r_5NjOQ6hT6QMHWgTK0L4u6RhNuheZws/view"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Site
               </Button>
@@ -169,8 +205,8 @@ export default function Projects() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3}>
-          <Card sx={{ borderRadius: "8px", height: "100%" }}>
+        <Grid item xs={12} sm={6} md={4}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
             <CardContent>
               <Typography variant="h5" component="div">
                 First Portfolio Project
@@ -193,19 +229,31 @@ export default function Projects() {
                 journey, November 2022.
               </Typography>
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://github.com/cmv303/Camila-is-learning-code"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Repository
               </Button>
 
               <Button
-                variant="outlined"
+                variant="contained"
                 href="https://cmv303.github.io/Camila-is-learning-code/"
                 target="_blank"
                 rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                  marginRight: "15%",
+                  marginTop: "5%"
+                }}
               >
                 Site
               </Button>
