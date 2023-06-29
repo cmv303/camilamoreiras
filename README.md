@@ -31,13 +31,18 @@ Start the server
 ```
 
 ## Deployment
+
 to see the deployed page, click here: https://cmv303.github.io/React-Portfolio2/
 
-## Demo
-<img width="1496" alt="Screenshot 2023-05-08 at 10 02 49 PM" src="https://user-images.githubusercontent.com/115678318/236975493-fa00e39f-9512-416c-8685-bc585aadd909.png">
 
-<img width="1491" alt="Screenshot 2023-05-08 at 10 03 04 PM" src="https://user-images.githubusercontent.com/115678318/236975504-4085749f-93c4-49f6-9c5e-5190b4df22a4.png">
+## Demo
+
+![Screen Shot 2023-06-29 at 12 36 52 PM](https://github.com/cmv303/React-Portfolio2/assets/115678318/75ec3683-4a20-44e3-889c-11c58adc9d5a)
+
+![Screen Shot 2023-06-29 at 12 37 01 PM](https://github.com/cmv303/React-Portfolio2/assets/115678318/b0ec9a7e-49d5-4bcf-8faf-b82e0e11d626)
+
+![Screen Shot 2023-06-29 at 12 37 16 PM](https://github.com/cmv303/React-Portfolio2/assets/115678318/5dc70264-924b-47b7-b246-80971bdb3f14)
+
 
 ## License
-
 Please refer to license in Repo.
