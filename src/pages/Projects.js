@@ -12,6 +12,8 @@ import lyrically from "../Assets/lyrically.png";
 import portfolio from "../Assets/portfolio1.png";
 import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
+import calmCalendar from "../Assets/calmCalendar.png";
+import techBlog from "../Assets/techBlog.png";
 import "../styles/Projects.css";
 
 export default function Projects() {
@@ -108,6 +110,11 @@ export default function Projects() {
                 <br />
                 <br />
                 Contributed to the filters, readme, and html
+                <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
               </Typography>
             </CardContent>
             <div className="project-button-wrapper">
@@ -168,6 +175,9 @@ export default function Projects() {
                 <br />
                 <br />
                 Demo video available through link
+                <br></br>
+                <br></br>
+                <br></br>
               </Typography>
             </CardContent>
             <div className="project-button-wrapper">
@@ -222,6 +232,12 @@ export default function Projects() {
               <Typography variant="body2" color="text.secondary">
                 Static web application to show where I started in my coding
                 journey, November 2022.
+                <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
               </Typography>
             </CardContent>
             <div className="project-button-wrapper">
@@ -253,6 +269,122 @@ export default function Projects() {
               </div>
           </Card>
         </Grid>
+
+        <Grid item xs={12} sm={6} md={4}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
+            <CardContent>
+              <Typography variant="h5" component="div">
+                Calm Calendar
+              </Typography>
+              <CardMedia
+                component="img"
+                image={calmCalendar}
+                height="194"
+                title="calmCalendar"
+                sx={{
+                  borderRadius: "3px",
+                  width: "100%",
+                  height: "100%",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                }}
+              />
+              <Typography variant="body2" color="text.secondary">
+              Calendar web application built with a team of 5 that allows new and returning users to add and view events as a calendar layout. Events are stored using cookies.
+              <br></br>
+              <br></br>
+              Contributed primarily in idea formation, team management, mvc architecture, documentation
+              <br></br>
+              </Typography>
+            </CardContent>
+            <div className="project-button-wrapper">
+                <Button
+                  variant="contained"
+                  href="https://github.com/cmv303/calm-calendar-app"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                  }}
+                >
+                  Repository
+                </Button>
+
+                <Button
+                  variant="contained"
+                  href="https://calm-calendar-app.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                  }}
+                >
+                  Site
+                </Button>
+              </div>
+          </Card>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={4}>
+          <Card sx={{ borderRadius: "8px", height: "100%", width: "100%" }}>
+            <CardContent>
+              <Typography variant="h5" component="div">
+                Tech Blog
+              </Typography>
+              <CardMedia
+                component="img"
+                image={techBlog}
+                height="194"
+                title="techBlog"
+                sx={{
+                  borderRadius: "3px",
+                  width: "100%",
+                  height: "100%",
+                  paddingTop: "10px",
+                  paddingBottom: "10px",
+                }}
+              />
+              <Typography variant="body2" color="text.secondary">
+              This is a simple blog format website that has the capacity to create, edit, and delete your own posts, while also allowing you to comment on the posts of others.
+              <br></br>
+              <br></br>
+              <br></br>
+              </Typography>
+            </CardContent>
+            <div className="project-button-wrapper">
+                <Button
+                  variant="contained"
+                  href="https://github.com/cmv303/TechBlog"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                  }}
+                >
+                  Repository
+                </Button>
+
+                <Button
+                  variant="contained"
+                  href="https://tech-blog1.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                  }}
+                >
+                  Site
+                </Button>
+              </div>
+          </Card>
+        </Grid>
+
+
+
       </Grid>
     </Container>
   );
