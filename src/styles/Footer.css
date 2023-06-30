@@ -7,8 +7,10 @@
   align-items: flex-start;
   flex-direction: column;
   padding-top: 10px;
-  margin-top: 20px;
-  margin-bottom: 0;
+  margin-top: 175px;
+  margin-bottom: -175px;
+  position:static;
+  
 }
 
 .socialMedia svg {
