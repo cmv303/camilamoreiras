@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/camilamoreiras/static/css/main.7838b4c2.css",
-    "main.js": "/camilamoreiras/static/js/main.b35460e2.js",
+    "main.js": "/camilamoreiras/static/js/main.023def84.js",
     "static/js/787.a2cb61a6.chunk.js": "/camilamoreiras/static/js/787.a2cb61a6.chunk.js",
     "static/media/camila_moreiras.jpg": "/camilamoreiras/static/media/camila_moreiras.5578fb1db1cb43a152b3.jpg",
     "static/media/portfolio1.png": "/camilamoreiras/static/media/portfolio1.30cbe5a702755b3aeba3.png",
@@ -13,11 +13,11 @@
     "static/media/calmCalendar.png": "/camilamoreiras/static/media/calmCalendar.865b20ed9b23ae132fcc.png",
     "index.html": "/camilamoreiras/index.html",
     "main.7838b4c2.css.map": "/camilamoreiras/static/css/main.7838b4c2.css.map",
-    "main.b35460e2.js.map": "/camilamoreiras/static/js/main.b35460e2.js.map",
+    "main.023def84.js.map": "/camilamoreiras/static/js/main.023def84.js.map",
     "787.a2cb61a6.chunk.js.map": "/camilamoreiras/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7838b4c2.css",
-    "static/js/main.b35460e2.js"
+    "static/js/main.023def84.js"
   ]
 }
