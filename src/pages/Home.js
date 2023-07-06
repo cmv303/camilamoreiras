@@ -69,10 +69,10 @@ export default function Home() {
   const currentItem = featuredItems[activeIndex];
 
   return (
-    <Container className="section" id="homePage" sx={{ marginTop: "20px" }}>
+    <Container className="Section" id="homePage" sx={{ marginTop: "20px" }}>
       {/* profile pic */}
       <CardMedia
-        className="profileImage"
+        className="ProfileImage"
         component="img"
         src={profileImage}
         alt="Profile Image"
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* featured project contents */}
-      <h3 style={{ marginBottom: "20px" }} className="featured">
+      <h3 style={{ marginBottom: "20px" }} className="Featured">
         Featured Projects
       </h3>
       <div style={{ position: "static", marginBottom: "20px" }}>

@@ -4,7 +4,7 @@ import "./styles/App.css";
 
 function App() {
   return (
-    <Router basename="/React-Portfolio2">
+    <Router basename="/camilamoreiras">
       <div className="App">
         <PortfolioContainer />
         {}

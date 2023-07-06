@@ -19,7 +19,7 @@ export default function Intro() {
           <h4 className="Tldr">
             Filmmaker, recovering academic, and full stack web developer.
           </h4>
-          <Typography variant="body1" className="Body_text_intro">
+          <Typography variant="body1" className="BodyText_intro">
             Since writing my first lines of code in November 2022, I've been
             constantly in awe as to how similar the process is to both
             filmmaking and teaching in a university setting. Filmmaking,

@@ -17,7 +17,7 @@ export default function Newsletter() {
       </CardContent>
 
       <Box className="Newsletter_content">
-        <Typography variant="body1" className="Body_text">
+        <Typography variant="body1" className="BodyText">
           Currently in the process of building out a dynamic newsletter. Please
           check back shortly!
         </Typography>

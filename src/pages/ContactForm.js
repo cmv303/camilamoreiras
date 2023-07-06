@@ -43,7 +43,7 @@ export default function ContactForm() {
         use this contact form. Either way, I'll receive it. I look forward to
         hearing from you!
       </Typography>
-      <Card variant="elevation" className="Form_container">
+      <Card variant="elevation" className="FormContainer">
         {/* contact form */}
         <CardContent>
           <form onSubmit={onSubmit}>

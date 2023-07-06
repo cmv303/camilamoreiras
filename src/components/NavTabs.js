@@ -20,13 +20,13 @@ function NavTabs({ currentPage, handlePageChange }) {
   }, [location]);
 
   return (
-    <header className="header-container">
+    <header className="HeaderContainer">
       <AppBar
         className="Nav_tabs"
         position="static"
         sx={{ background: "#282c34" }}
       >
-        {/* <div className="toggleButton" id={expandNavTabs ? "open" : "close"}>
+        {/* <div className="ToggleButton" id={expandNavTabs ? "open" : "close"}>
           <button
             onClick={() => {
               setExpandNavTabs((prev) => !prev);

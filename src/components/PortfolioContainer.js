@@ -24,14 +24,14 @@ export default function PortfolioContainer() {
 
   return (
     <React.Fragment>
-      <main className="bodyContainer">
+      <main className="BodyContainer">
         <nav>
           <NavTabs
             currentPage={currentPage}
             handlePageChange={handlePageChange}
           />
         </nav>
-        <div className="bodyText">{renderPage()}</div>
+        <div className="BodyText">{renderPage()}</div>
       </main>
       <Footer />
     </React.Fragment>
