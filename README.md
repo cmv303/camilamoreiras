@@ -32,7 +32,7 @@ Start the server
 
 ## Deployment
 
-to see the deployed page, click here: https://cmv303.github.io/React-Portfolio2/
+to see the deployed page, click here: https://cmv303.github.io/camilamoreiras/
 
 
 ## Demo
