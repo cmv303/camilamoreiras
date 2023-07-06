@@ -38,7 +38,6 @@ export default function Footer() {
             <Description sx={{ fontSize: 18 }} />
           </a>
           <p>
-            {" "}
             Site built using React with Material UI
             <br></br>
             &copy; 2023 Camila Moreiras

@@ -28,6 +28,13 @@ export default function Newsletter() {
         If you'd like to check out my linkedin, github, or resume, make sure to
         click on the icons in the footer
       </Typography>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
