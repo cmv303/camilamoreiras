@@ -1,21 +1,21 @@
 .Intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4%;
 }
 
-.tldr {
-    margin-top: -4%
+.Tldr {
+  margin-top: -4%;
 }
 
-.featured {
-    margin-top: -5%
+.Featured {
+  margin-top: -5%;
 }
 
-.body-text-intro{
-justify-content: center;
-align-items: center;
-padding-top: 20px;
+.Body_text_intro {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs.js";
 import Home from "../pages/Home.js";
-import About from "../pages/About.js";
+import Newsletter from "../pages/Newsletter.js";
 import Projects from "../pages/Projects.js";
 import ContactPage from "../pages/ContactForm.js";
 import Footer from "./Footer.js";
@@ -13,9 +13,9 @@ export default function PortfolioContainer() {
     return (
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Contact" element={<ContactPage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     );
   };

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Contact.css";
 import {
   Snackbar,
   IconButton,
@@ -10,7 +11,6 @@ import {
 } from "@mui/material";
 import { Close } from "@mui/icons-material";
 import { useForm, ValidationError } from "@formspree/react";
-import "../styles/Contact.css";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("xyyaoave");
@@ -36,14 +36,14 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="getInTouch">
+    <section className="GetInTouch">
       {/* introductory text at top of page */}
       <Typography variant="h1" component="div" sx={{ fontSize: "1rem" }}>
         Feel free to send me an email by using the mail icon in the footer or
         use this contact form. Either way, I'll receive it. I look forward to
         hearing from you!
       </Typography>
-      <Card variant="elevation" className="form-container">
+      <Card variant="elevation" className="Form_container">
         {/* contact form */}
         <CardContent>
           <form onSubmit={onSubmit}>

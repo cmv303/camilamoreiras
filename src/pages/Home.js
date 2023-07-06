@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Intro from "./Intro";
 import {
   Grid,
   Container,
@@ -9,12 +10,13 @@ import {
   Button,
   CardActions,
 } from "@mui/material";
+
+// import images
 import profileImage from "../Assets/camila_moreiras.jpg";
 import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
 import calmCalendar from "../Assets/calmCalendar.png";
-import reactPortfolio from "../Assets/reactPortfolio.png"
-import Intro from "./Intro";
+import reactPortfolio from "../Assets/reactPortfolio.png";
 
 export default function Home() {
   const featuredItems = [
@@ -89,7 +91,7 @@ export default function Home() {
       </section>
 
       {/* featured project contents */}
-      <h3 style={{marginBottom: "20px" }} className="featured">
+      <h3 style={{ marginBottom: "20px" }} className="featured">
         Featured Projects
       </h3>
       <div style={{ position: "static", marginBottom: "20px" }}>
@@ -125,40 +127,38 @@ export default function Home() {
                   {currentItem.description}
                 </Typography>
               </CardContent>
-                {/* carousel buttons and their styling */}
-        <CardActions
-          style={{
-            justifyContent: "space-evenly",
-          }}
-        >
-          <Button
-            variant="contained"
-            size="small"
-            onClick={handlePrev}
-            sx={{
-              backgroundColor: "#282c34",
-              color: "#f5f5f5",
-              marginRight: "5%",
-            }}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="contained"
-            size="small"
-            onClick={handleNext}
-            sx={{
-              backgroundColor: "#282c34",
-              color: "#f5f5f5",
-              marginLeft: "5%",
-            }}
-          >
-            Next
-          </Button>
-        </CardActions>
-              
+              {/* carousel buttons and their styling */}
+              <CardActions
+                style={{
+                  justifyContent: "space-evenly",
+                }}
+              >
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={handlePrev}
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                    marginRight: "5%",
+                  }}
+                >
+                  Previous
+                </Button>
+                <Button
+                  variant="contained"
+                  size="small"
+                  onClick={handleNext}
+                  sx={{
+                    backgroundColor: "#282c34",
+                    color: "#f5f5f5",
+                    marginLeft: "5%",
+                  }}
+                >
+                  Next
+                </Button>
+              </CardActions>
             </Card>
-
           </Grid>
         </Grid>
       </div>

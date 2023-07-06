@@ -9,17 +9,17 @@ export default function Intro() {
         variant="h4"
         component="h1"
         gutterBottom
-        className="about-heading"
+        className="Newsletter_heading"
       >
         Camila Moreiras
       </Typography>
 
       <div className="Intro" id="introOnHomePage">
-        <Box className="Intro-content">
-          <h4 className="tldr">
+        <Box className="Intro_content">
+          <h4 className="Tldr">
             Filmmaker, recovering academic, and full stack web developer.
           </h4>
-          <Typography variant="body1" className="body-text-intro">
+          <Typography variant="body1" className="Body_text_intro">
             Since writing my first lines of code in November 2022, I've been
             constantly in awe as to how similar the process is to both
             filmmaking and teaching in a university setting. Filmmaking,

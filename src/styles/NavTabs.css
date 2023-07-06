@@ -1,19 +1,19 @@
-.nav-link {
+.Nav_link {
   width: 100%;
   height: 33%;
   color: #f5f5f5;
 }
 
-.nav-link .toggleButton button {
+.Nav_link .ToggleButton button {
   border: none;
   padding: 0;
 }
 
-.nav-link .toggleButton #close {
+.Nav_link .ToggleButton #close {
   display: none;
 }
 
-#open.nav-link {
+#open.Nav_link {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -22,12 +22,12 @@
   text-align: center;
 }
 
-.nav-link #open a {
+.Nav_link #open a {
   color: #fff;
   font-size: 24px;
   margin: 20px;
 }
 
-.nav-link #open a:hover {
+.Nav_link #open a:hover {
   text-decoration: underline;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Projects.css";
 import {
   Grid,
   Container,
@@ -8,17 +9,18 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+
+// import images
 import lyrically from "../Assets/lyrically.png";
 import portfolio from "../Assets/portfolio1.png";
 import employeeTracker from "../Assets/employee_tracker.png";
 import dailyClawsmic from "../Assets/Daily_Clawsmic.png";
 import calmCalendar from "../Assets/calmCalendar.png";
 import techBlog from "../Assets/techBlog.png";
-import "../styles/Projects.css";
 
 export default function Projects() {
   return (
-    <Container className="section" id="projectsPage">
+    <Container className="Section" id="projectsPage">
       <h1 style={{ marginBottom: "20px", marginTop: "20px" }}>
         Selected Projects
       </h1>
@@ -55,33 +57,33 @@ export default function Projects() {
                 Contributed primarily to the CSS and readme.
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
-                <Button
-                  variant="contained"
-                  href="https://github.com/cmv303/Clawesome-Crew"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Repository
-                </Button>
+            <div className="Project_button_wrapper">
+              <Button
+                variant="contained"
+                href="https://github.com/cmv303/Clawesome-Crew"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Repository
+              </Button>
 
-                <Button
-                  variant="contained"
-                  href="https://cosmic-gallary.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Site
-                </Button>
-              </div>
+              <Button
+                variant="contained"
+                href="https://cosmic-gallary.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Site
+              </Button>
+            </div>
           </Card>
         </Grid>
 
@@ -111,13 +113,13 @@ export default function Projects() {
                 <br />
                 Contributed to the filters, readme, and html
                 <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
+            <div className="Project_button_wrapper">
               <Button
                 variant="contained"
                 href="https://github.com/cmv303/SuperGroupOne"
@@ -180,33 +182,33 @@ export default function Projects() {
                 <br></br>
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
-                <Button
-                  variant="contained"
-                  href="https://github.com/cmv303/Employee_Tracker"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Repository
-                </Button>
+            <div className="Project_button_wrapper">
+              <Button
+                variant="contained"
+                href="https://github.com/cmv303/Employee_Tracker"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Repository
+              </Button>
 
-                <Button
-                  variant="contained"
-                  href="https://drive.google.com/file/d/1r_5NjOQ6hT6QMHWgTK0L4u6RhNuheZws/view"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Site
-                </Button>
-              </div>
+              <Button
+                variant="contained"
+                href="https://drive.google.com/file/d/1r_5NjOQ6hT6QMHWgTK0L4u6RhNuheZws/view"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Site
+              </Button>
+            </div>
           </Card>
         </Grid>
 
@@ -233,40 +235,40 @@ export default function Projects() {
                 Static web application to show where I started in my coding
                 journey, November 2022.
                 <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
-                <Button
-                  variant="contained"
-                  href="https://github.com/cmv303/Camila-is-learning-code"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Repository
-                </Button>
+            <div className="Project_button_wrapper">
+              <Button
+                variant="contained"
+                href="https://github.com/cmv303/Camila-is-learning-code"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Repository
+              </Button>
 
-                <Button
-                  variant="contained"
-                  href="https://cmv303.github.io/Camila-is-learning-code/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Site
-                </Button>
-              </div>
+              <Button
+                variant="contained"
+                href="https://cmv303.github.io/Camila-is-learning-code/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Site
+              </Button>
+            </div>
           </Card>
         </Grid>
 
@@ -290,40 +292,43 @@ export default function Projects() {
                 }}
               />
               <Typography variant="body2" color="text.secondary">
-              Calendar web application built with a team of 5 that allows new and returning users to add and view events as a calendar layout. Events are stored using cookies.
-              <br></br>
-              <br></br>
-              Contributed primarily in idea formation, team management, mvc architecture, documentation
-              <br></br>
+                Calendar web application built with a team of 5 that allows new
+                and returning users to add and view events as a calendar layout.
+                Events are stored using cookies.
+                <br></br>
+                <br></br>
+                Contributed primarily in idea formation, team management, mvc
+                architecture, documentation
+                <br></br>
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
-                <Button
-                  variant="contained"
-                  href="https://github.com/cmv303/calm-calendar-app"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Repository
-                </Button>
+            <div className="Project_button_wrapper">
+              <Button
+                variant="contained"
+                href="https://github.com/cmv303/calm-calendar-app"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Repository
+              </Button>
 
-                <Button
-                  variant="contained"
-                  href="https://calm-calendar-app.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Site
-                </Button>
-              </div>
+              <Button
+                variant="contained"
+                href="https://calm-calendar-app.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Site
+              </Button>
+            </div>
           </Card>
         </Grid>
 
@@ -347,44 +352,43 @@ export default function Projects() {
                 }}
               />
               <Typography variant="body2" color="text.secondary">
-              This is a simple blog format website that has the capacity to create, edit, and delete your own posts, while also allowing you to comment on the posts of others.
-              <br></br>
-              <br></br>
-              <br></br>
+                This is a simple blog format website that has the capacity to
+                create, edit, and delete your own posts, while also allowing you
+                to comment on the posts of others.
+                <br></br>
+                <br></br>
+                <br></br>
               </Typography>
             </CardContent>
-            <div className="project-button-wrapper">
-                <Button
-                  variant="contained"
-                  href="https://github.com/cmv303/TechBlog"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Repository
-                </Button>
+            <div className="Project_button_wrapper">
+              <Button
+                variant="contained"
+                href="https://github.com/cmv303/TechBlog"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Repository
+              </Button>
 
-                <Button
-                  variant="contained"
-                  href="https://tech-blog1.herokuapp.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  sx={{
-                    backgroundColor: "#282c34",
-                    color: "#f5f5f5",
-                  }}
-                >
-                  Site
-                </Button>
-              </div>
+              <Button
+                variant="contained"
+                href="https://tech-blog1.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                sx={{
+                  backgroundColor: "#282c34",
+                  color: "#f5f5f5",
+                }}
+              >
+                Site
+              </Button>
+            </div>
           </Card>
         </Grid>
-
-
-
       </Grid>
     </Container>
   );
