@@ -1,15 +1,15 @@
-.Newsletter {
+.Current {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.Newsletter_content {
+.Current_content {
   padding: 20px;
 }
 
-.Newsletter_heading {
+.Current_heading {
   padding-top: 20px;
 }
 
@@ -22,7 +22,7 @@
   padding-right: 50px;
 }
 
-.Newsletter .ProfileImage {
+.Current .ProfileImage {
   height: 194px;
   width: 194px;
   border-radius: 40%;

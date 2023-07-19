@@ -9,7 +9,7 @@ export default function Intro() {
         variant="h4"
         component="h1"
         gutterBottom
-        className="Newsletter_heading"
+        className="Current_heading"
       >
         Camila Moreiras
       </Typography>

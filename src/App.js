@@ -7,7 +7,6 @@ function App() {
     <Router basename="/camilamoreiras">
       <div className="App">
         <PortfolioContainer />
-        {}
       </div>
     </Router>
   );

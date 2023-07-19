@@ -7,10 +7,9 @@ export default function Footer() {
   return (
     <footer className="Footer">
         <Grid
-          container
+          container columns={{ xs: 12, sm: 12, md:4 }}
           justifyContent="center"
           alignItems="center"
-          spacing={2}
           className="SocialMedia"
         >
           <Grid item xs={12} sm={12} md={4}>
@@ -19,15 +18,15 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <LinkedIn sx={{ fontSize: 14 }} />
+              <LinkedIn sx={{ fontSize: 12 }} />
             </a>
 
             <a href="https://github.com/cmv303" target="_blank" rel="noreferrer">
-              <GitHub sx={{ fontSize: 14 }} />
+              <GitHub sx={{ fontSize: 12 }} />
             </a>
 
             <a href="mailto: moreiras.camila@gmail.com">
-              <Email sx={{ fontSize: 14 }} />
+              <Email sx={{ fontSize: 12 }} />
             </a>
 
             <a
@@ -35,7 +34,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              <Description sx={{ fontSize: 14 }} />
+              <Description sx={{ fontSize: 12 }} />
             </a>
             <p>
               Site built using React with Material UI

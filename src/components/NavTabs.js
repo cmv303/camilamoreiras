@@ -54,10 +54,10 @@ function NavTabs({ currentPage, handlePageChange }) {
             />
           </Link>
 
-          <Link to="/newsletter" className="Nav_link">
+          <Link to="/current" className="Nav_link">
             <Tab
-              label="Newsletter"
-              value="Newsletter"
+              label="Current"
+              value="Current"
               sx={{ "& .MuiTab-wrapper": { color: "white" } }}
             />
           </Link>
