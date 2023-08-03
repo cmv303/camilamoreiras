@@ -3,11 +3,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4%;
+  margin: 4% auto;
+  max-width: 800px;
+}
+
+.Intro_content {
+  text-align: left;
 }
 
 .Tldr {
   margin-top: -4%;
+  text-align: center;
 }
 
 .Featured {
@@ -15,7 +21,5 @@
 }
 
 .BodyText_intro {
-  justify-content: center;
-  align-items: center;
   padding-top: 20px;
 }

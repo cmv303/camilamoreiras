@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Intro from "./Intro";
+import Intro from "./Intro.js";
 import {
   Grid,
   Container,
@@ -85,13 +85,11 @@ export default function Home() {
       />
       {/* intro component added here */}
       <section style={{ marginTop: "20px", position: "relative" }}>
-        <Grid container spacing={4} textAlign="center" justifyContent="center">
           <Intro />
-        </Grid>
       </section>
 
       {/* featured project contents */}
-      <h3 style={{ marginBottom: "20px" }} className="Featured">
+      <h3 style={{ marginBottom: "20px", paddingTop: "10px"}} className="Featured">
         Featured Projects
       </h3>
       <div style={{ position: "static", marginBottom: "20px" }}>

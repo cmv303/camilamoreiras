@@ -21,7 +21,7 @@ export default function ContactForm() {
     setOpen(false);
   };
 
-  const onSubmit = async (data) => {
+  const onSubmit = async data => {
     try {
       const { response } = await handleSubmit(data);
       if (response.status === 200) {

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Projects.css";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard.js";
 import { Grid, Container, Typography } from "@mui/material";
 
 // import images

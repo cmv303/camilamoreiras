@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectCardButtons from "./ProjectCardButtons";
+import ProjectCardButtons from "./ProjectCardButtons.js";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 export default function ProjectCard(props) {
@@ -25,7 +25,11 @@ export default function ProjectCard(props) {
           }}
         />
 
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          fontFamily={"Roboto-Slab"}
+        >
           {description}
         </Typography>
       </CardContent>

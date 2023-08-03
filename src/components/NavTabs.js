@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import ReorderIcon from "@mui/icons-material/Reorder.js";
+import React from "react";
+import { Link } from "react-router-dom";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import "../styles/NavTabs.css";
 
-function NavTabs({ currentPage, handlePageChange }) {
-  const handleChange = (event, newValue) => {
-    handlePageChange(newValue);
-  };
-
-  // !start: toggle button doesn't seem to be working. I've commented it out for now
-  const [expandNavTabs, setExpandNavTabs] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    setExpandNavTabs(false);
-  }, [location]);
-
+function NavTabs() {
   return (
     <header className="HeaderContainer">
       <AppBar
@@ -26,18 +13,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         position="static"
         sx={{ background: "#282c34" }}
       >
-        {/* <div className="ToggleButton" id={expandNavTabs ? "open" : "close"}>
-          <button
-            onClick={() => {
-              setExpandNavTabs((prev) => !prev);
-            }}
-          >
-            <ReorderIcon sx={{ cursor: "pointer" }} />
-          </button>
-        </div> */}
-        {/* //!end: part that is not working */}
-
-        <Tabs value={currentPage} onChange={handleChange}>
+        <Tabs>
           <Link to="/" className="Nav_link">
             <Tab
               label="Home"

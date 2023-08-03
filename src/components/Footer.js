@@ -6,13 +6,13 @@ import { Grid } from "@mui/material";
 export default function Footer() {
   return (
     <footer className="Footer">
-        <Grid
-          container columns={{ xs: 12, sm: 12, md:4 }}
-          justifyContent="center"
-          alignItems="center"
-          className="SocialMedia"
-        >
-          <Grid item xs={12} sm={12} md={4}>
+      <Grid
+        container
+        columns={{ xs: 12, sm: 12, md: 4 }}
+        className="SocialMedia"
+      >
+        <Grid item xs={12} sm={12} md={4}>
+          <div className="icon-container">
             <a
               href="https://www.linkedin.com/in/camilamoreiras/"
               target="_blank"
@@ -21,7 +21,11 @@ export default function Footer() {
               <LinkedIn sx={{ fontSize: 12 }} />
             </a>
 
-            <a href="https://github.com/cmv303" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/cmv303"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHub sx={{ fontSize: 12 }} />
             </a>
 
@@ -36,13 +40,14 @@ export default function Footer() {
             >
               <Description sx={{ fontSize: 12 }} />
             </a>
-            <p>
-              Site built using React with Material UI
-              <br></br>
-              &copy; 2023 Camila Moreiras
-            </p>
-          </Grid>
+          </div>
+          <p id="footerText">
+            Site built using React with Material UI
+            <br></br>
+            &copy; 2023 Camila Moreiras
+          </p>
         </Grid>
+      </Grid>
     </footer>
   );
 }
