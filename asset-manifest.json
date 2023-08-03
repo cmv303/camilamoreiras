@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/camilamoreiras/static/css/main.9f1ba166.css",
-    "main.js": "/camilamoreiras/static/js/main.777f1541.js",
-    "static/js/787.a2cb61a6.chunk.js": "/camilamoreiras/static/js/787.a2cb61a6.chunk.js",
+    "main.css": "/camilamoreiras/static/css/main.f1166420.css",
+    "main.js": "/camilamoreiras/static/js/main.e8c828d6.js",
     "static/media/camila_moreiras.jpg": "/camilamoreiras/static/media/camila_moreiras.5578fb1db1cb43a152b3.jpg",
     "static/media/portfolio1.png": "/camilamoreiras/static/media/portfolio1.30cbe5a702755b3aeba3.png",
     "static/media/Daily_Clawsmic.png": "/camilamoreiras/static/media/Daily_Clawsmic.dbc36a137eadf6a78b56.png",
@@ -13,12 +12,11 @@
     "static/media/Recetas_siteMap.png": "/camilamoreiras/static/media/Recetas_siteMap.0c09b5fbacb0ac497d06.png",
     "static/media/calmCalendar.png": "/camilamoreiras/static/media/calmCalendar.865b20ed9b23ae132fcc.png",
     "index.html": "/camilamoreiras/index.html",
-    "main.9f1ba166.css.map": "/camilamoreiras/static/css/main.9f1ba166.css.map",
-    "main.777f1541.js.map": "/camilamoreiras/static/js/main.777f1541.js.map",
-    "787.a2cb61a6.chunk.js.map": "/camilamoreiras/static/js/787.a2cb61a6.chunk.js.map"
+    "main.f1166420.css.map": "/camilamoreiras/static/css/main.f1166420.css.map",
+    "main.e8c828d6.js.map": "/camilamoreiras/static/js/main.e8c828d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f1ba166.css",
-    "static/js/main.777f1541.js"
+    "static/css/main.f1166420.css",
+    "static/js/main.e8c828d6.js"
   ]
 }
