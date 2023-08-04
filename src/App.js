@@ -11,15 +11,15 @@ import Footer from "./components/Footer.js";
 function App() {
   return (
     <div className="App">
-        <Router basename="/">
-          <NavTabs />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/current" element={<Current />} />
-            <Route path="/contact" element={<ContactPage />} />
-          </Routes>
-        </Router>
+      <Router basename="/">
+        <NavTabs />
+        <Routes>
+          <Route path="/camilamoreiras" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/current" element={<Current />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </Router>
       <Footer />
     </div>
   );
