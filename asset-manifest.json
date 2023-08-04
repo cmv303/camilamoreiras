@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/camilamoreiras/static/css/main.f1166420.css",
-    "main.js": "/camilamoreiras/static/js/main.e8c828d6.js",
+    "main.js": "/camilamoreiras/static/js/main.9daa72b1.js",
     "static/media/camila_moreiras.jpg": "/camilamoreiras/static/media/camila_moreiras.5578fb1db1cb43a152b3.jpg",
     "static/media/portfolio1.png": "/camilamoreiras/static/media/portfolio1.30cbe5a702755b3aeba3.png",
     "static/media/Daily_Clawsmic.png": "/camilamoreiras/static/media/Daily_Clawsmic.dbc36a137eadf6a78b56.png",
@@ -13,10 +13,10 @@
     "static/media/calmCalendar.png": "/camilamoreiras/static/media/calmCalendar.865b20ed9b23ae132fcc.png",
     "index.html": "/camilamoreiras/index.html",
     "main.f1166420.css.map": "/camilamoreiras/static/css/main.f1166420.css.map",
-    "main.e8c828d6.js.map": "/camilamoreiras/static/js/main.e8c828d6.js.map"
+    "main.9daa72b1.js.map": "/camilamoreiras/static/js/main.9daa72b1.js.map"
   },
   "entrypoints": [
     "static/css/main.f1166420.css",
-    "static/js/main.e8c828d6.js"
+    "static/js/main.9daa72b1.js"
   ]
 }
