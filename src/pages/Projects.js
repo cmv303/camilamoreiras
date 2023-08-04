@@ -69,10 +69,10 @@ export default function Projects() {
     },
   ];
 
-  const renderDescription = (description) => {
+  const renderDescription = description => {
     return description.split("\n").map((lineBreak, index) => (
       // Map each paragraph to a Typography component
-      <Typography key={index} variant="body2" color="text.secondary" lineBreak>
+      <Typography key={index} variant="body2" color="text.secondary">
         <br></br>
         {lineBreak}
       </Typography>
@@ -86,7 +86,7 @@ export default function Projects() {
       </h1>
       <Grid container spacing={4}>
         {/* map through each project so they can all be displayed in a grid */}
-        {projectData.map((singleProject) => (
+        {projectData.map(singleProject => (
           <Grid item xs={12} sm={6} md={4} key={singleProject.title}>
             <ProjectCard
               title={singleProject.title}

@@ -11,7 +11,7 @@ import Footer from "./components/Footer.js";
 function App() {
   return (
     <div className="App">
-        <Router>
+        <Router basename="/">
           <NavTabs />
           <Routes>
             <Route path="/" element={<Home />} />
